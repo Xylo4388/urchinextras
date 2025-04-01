@@ -13,7 +13,7 @@ A Minecraft 1.8.9 Forge mod that integrates with the Urchin API to display playe
 
 ## Installation
 
-1. Install Minecraft 1.8.9 with Forge 11.15.1.2318
+1. Install Minecraft 1.8.9 with Forge
 2. Download the latest release from the releases page
 3. Place the .jar file in your `.minecraft/mods` folder
 4. Launch Minecraft with Forge
