@@ -1,24 +1,39 @@
 # Gradle
 .gradle/
 build/
-gradle-app.setting
-!gradle-wrapper.jar
-.gradletasknamecache
+out/
+classes/
 
-# IDE
-.idea/
-*.iml
-.vscode/
+# Eclipse
+*.launch
 .settings/
+.metadata/
 .classpath
 .project
-eclipse/
-*.launch
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
 
 # Minecraft
 run/
-*.log
 logs/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Compiled files
 *.class
@@ -28,8 +43,6 @@ logs/
 # Temporary files
 *.tmp
 *.temp
-.DS_Store
-Thumbs.db
 
 # Documentation
 README.txt

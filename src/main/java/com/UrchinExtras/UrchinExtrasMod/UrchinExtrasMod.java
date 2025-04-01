@@ -81,8 +81,8 @@ public class UrchinExtrasMod {
     @EventHandler
     public void init(FMLInitializationEvent event) {
         timer = new Timer();
-        ClientCommandHandler.instance.registerCommand(new CheckTagsCommand());
-        ClientCommandHandler.instance.registerCommand(new SetApiKeyCommand());
+        net.minecraftforge.client.ClientCommandHandler.instance.registerCommand(new CheckTagsCommand());
+        net.minecraftforge.client.ClientCommandHandler.instance.registerCommand(new SetApiKeyCommand());
     }
     
     @EventHandler

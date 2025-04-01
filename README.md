@@ -1,43 +1,31 @@
 # Urchin Extras
 
-A Minecraft mod that enhances your gameplay experience by providing real-time player information and cheater detection through the Urchin API.
+A Minecraft 1.8.9 Forge mod that integrates with the Urchin API to display player tags in-game.
 
 ## Features
 
-- Automatic player tag checking when players join the game
-- Manual tag checking with `/urchintags <player>` command
-- Color-coded tag display for different types of information:
-  - Sniper detection (Dark Red)
-  - Possible sniper (Red)
-  - Legit sniper (Gold)
-  - Confirmed cheater (Dark Purple)
-  - Blatant cheater (Red)
-  - Closet cheater (Gold)
-  - Caution (Yellow)
-  - Account information (Aqua)
-  - General info (Gray)
-- Player name correction and caching system
-- Rate-limited API calls to prevent abuse
-- Configurable API key through `/urchinapikey <key>` command
-
-## Requirements
-
-- Minecraft 1.8 with Forge
-- Urchin [API key](https://discord.gg/urchin/)
+- Automatically checks player tags when joining a game
+- Command to manually check player tags: `/urchintags <player>`
+- Configurable API key: `/urchinapikey <key>`
+- Caches player data to reduce API calls
+- Color-coded tags based on tag type
+- Rate limiting to prevent API abuse
 
 ## Installation
 
-1. Download the latest release
-2. Place the jar file in your Minecraft mods folder
-3. Set your Urchin API key using `/urchinapikey <key>`
+1. Install Minecraft 1.8.9 with Forge 11.15.1.2318
+2. Download the latest release from the releases page
+3. Place the .jar file in your `.minecraft/mods` folder
+4. Launch Minecraft with Forge
+5. Get your API key from [urchin.ws](https://urchin.ws)
+6. Use `/urchinapikey <your-key>` to set your API key
 
-## Usage
+## Building
 
-The mod automatically checks player tags when:
-- The game starts
-- Players join the server
+1. Clone the repository
+2. Run `./gradlew build`
+3. Find the compiled jar in `build/libs`
 
-You can also manually check tags using:
-```
-/urchintags <player>
-```
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
