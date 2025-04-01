@@ -1,22 +1,30 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
 .classpath
 .project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
+# Minecraft
+run/
+*.log
+logs/
 
-# gradle
-build
-.gradle
+# Compiled files
+*.class
+*.jar
+!build/libs/*.jar
 
-# other
-eclipse
-run
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
