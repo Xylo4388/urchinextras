@@ -83,6 +83,7 @@ public class UrchinExtrasMod {
         timer = new Timer();
         net.minecraftforge.client.ClientCommandHandler.instance.registerCommand(new CheckTagsCommand());
         net.minecraftforge.client.ClientCommandHandler.instance.registerCommand(new SetApiKeyCommand());
+        net.minecraftforge.client.ClientCommandHandler.instance.registerCommand(new VersionCommand());
     }
     
     @EventHandler
@@ -361,6 +362,29 @@ public class UrchinExtrasMod {
             config.save();
             sender.addChatMessage(new ChatComponentText(
                 EnumChatFormatting.GREEN + "[UrchinExtras] API key updated successfully!"));
+        }
+
+        @Override
+        public int getRequiredPermissionLevel() {
+            return 0;
+        }
+    }
+
+    private static class VersionCommand extends CommandBase {
+        @Override
+        public String getCommandName() {
+            return "urchinversion";
+        }
+
+        @Override
+        public String getCommandUsage(ICommandSender sender) {
+            return "/urchinversion";
+        }
+
+        @Override
+        public void processCommand(ICommandSender sender, String[] args) {
+            sender.addChatMessage(new ChatComponentText(
+                EnumChatFormatting.GREEN + "[UrchinExtras] Version: " + VERSION));
         }
 
         @Override
