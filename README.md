@@ -17,7 +17,7 @@ A Minecraft 1.8.9 Forge mod that integrates with the Urchin API to display playe
 2. Download the latest release from the releases page
 3. Place the .jar file in your `.minecraft/mods` folder
 4. Launch Minecraft with Forge
-5. Get your API key from [urchin.ws](https://urchin.ws)
+5. Get your API key from [Urchin](https://discord.gg/urchin)
 6. Use `/urchinapikey <your-key>` to set your API key
 
 ## Building
